@@ -1,13 +1,16 @@
-import './estilos.css';
-import 'core-js/actual';
+import './App.css';
+import Navbar from './components/Navbar';
+import Cuerpo from './components/Cuerpo';
 
 function App() {
-  
 
   return (
-    <div>
-      
+    <div className='container-fluid colorFondo'>
+      <Navbar />
+      <hr />
+      <Cuerpo />
     </div>
+
   );
 }
 
