@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Cuerpo from './components/Cuerpo';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <hr />
       <Cuerpo />
+      <Footer ubicacion='CABA' copyright='Nombre Proyecto™'/>
     </div>
 
   );
