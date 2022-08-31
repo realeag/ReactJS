@@ -6,25 +6,5 @@
 .colorFondo {
   background-color: rgb(204, 133, 133);
 }
-.logo{
-  width: 25%;
-  height: 25%
-}
 
-.camiseta{
-  width: 30%;
-  height: 30%;
-}
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.nav-link{
-  font-size: 24px;
-  margin-left: 1.25rem;
-}
 
-.footer{
-  padding: 0.3rem;
-}
