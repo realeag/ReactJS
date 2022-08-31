@@ -7,7 +7,6 @@ class Footer extends Component {
             <div className="footer">
                 <hr />
                 <p>{this.props.copyright} {this.props.ubicacion}</p>
-                <p>{this.props.copyright} {this.props.ubicacion}</p>
             </div>
             
         )

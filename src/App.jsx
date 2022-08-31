@@ -1,7 +1,11 @@
 import './App.css';
+import './components/css/styleCuerpo.css';
+import './components/css/styleFooter.css';
+import './components/css/styleNavbar.css';
 import Navbar from './components/Navbar';
 import Cuerpo from './components/Cuerpo';
 import Footer from './components/Footer';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
 
@@ -9,8 +13,11 @@ function App() {
     <div className='container-fluid colorFondo'>
       <Navbar />
       <hr />
-      <Cuerpo />
-      <Footer ubicacion='CABA' copyright='Nombre Proyecto™'/>
+      <main>
+        <ItemListContainer proyecto="ACA VA EL TITULO DEL PROYECTO" />
+        <Cuerpo />
+      </main>
+      <Footer ubicacion='CABA' copyright='Nombre™' />
     </div>
 
   );

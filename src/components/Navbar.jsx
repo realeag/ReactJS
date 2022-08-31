@@ -1,19 +1,16 @@
 import React from 'react';
 import favicon from "./imgs/vector.png";
+import CartWidget from './CartWidget';
 
 const Navbar = () => {
 
     return (
         <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img className='logo' src={favicon} alt='logo'></img></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="navbar-bar" id="navbarNav">
+                    <ul class="navbar-nav mt-2 mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link navbar-brand" href="index.html"><img className='logo' src={favicon} alt='logo'></img></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Tienda</a>
@@ -21,11 +18,16 @@ const Navbar = () => {
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Nosotros</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><CartWidget /></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        
     )
 }
+
 
 export default Navbar;
